@@ -1,0 +1,543 @@
+/* setting up fonts and white */
+/*by Austin Barrett */
+
+:root {
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+}
+/* just useing this for general consistancy*/
+* {
+  box-sizing: border-box;
+}
+
+/*setting up the header*/
+h6,h5,h4,h3,h2,h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+
+h3 {
+  font-size: calc(1.1rem + 0.1vw);
+}
+
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.display-1 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(1rem);
+  padding-left: var(1rem);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+  margin-top: 1.5rem;
+
+    
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+/*Stuff like these there may be multiple of because i am messing with the sizing*/
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+
+.col-lg-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-lg-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.col-lg-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-lg-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-lg-4 { 
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-lg-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.col-lg-6 { /**/
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-lg-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-lg-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-lg-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-lg-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+.col-lg-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+.col-lg-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* The following is navbar related */
+nav {
+  overflow: hidden;
+  background-color: #666666;
+  position: fixed;
+  top: 0;
+  width: 100%;
+   display: flex; 
+  justify-content: center; 
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #eeeeee;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #e9a87d;
+}
+
+#current {
+    font-weight: bold;
+}
+
+
+.overflow-hidden {
+  overflow: hidden ;
+}
+
+.position-static {
+  position: static ;
+}
+
+.position-relative {
+  position: relative ;
+}
+
+.position-absolute {
+  position: absolute ;
+}
+
+.position-fixed {
+  position: fixed ;
+}
+
+
+.top-0 {
+  top: 0;
+}
+
+
+.border-3 {
+  border: 3px solid ;
+}
+
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 ;
+}
+
+
+.border-success {
+  border-color: rgb(0, 51, 102) ;
+}
+
+
+.justify-content-center {
+  justify-content: center ;
+  
+}
+
+
+.center-div{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 4%;
+  position: relative
+}
+/* there were more of the following (that why the number)
+but i ended up only needing these*/
+
+.my-5 {
+  margin-top: 3rem ;
+  margin-bottom: 3rem ;
+}
+
+
+.mb-4 {
+  margin-bottom: 1.5rem ;
+}
+
+
+
+.ms-auto {
+  margin-left: auto ;
+}
+
+.py-5 {
+  padding-top: 3rem ;
+  padding-bottom: 3rem ;
+}
+
+
+.fw-bolder {
+  font-weight: bolder ;
+}
+
+
+.text-center {
+  text-align: center ;
+}
+
+
+
+.text-white {
+  color: white ;
+}
+
+.text-orange {
+   color: #e9a87d;
+}
+.text-dark-orange{
+    color: #e27d5f;
+}
+
+/* header and footer coloring */
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: #40b3a2;
+}
+
+/* stuff i use for the banner image */
+/*
+.bg-imageHome {
+  --bs-bg-opacity: 1;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)), url(assets/temp.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+*/
+
+.bg-orange {
+    background-color: #e9a87d;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #84cccb ;
+}
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+}
+
+.img-fluid {
+  max-width: 12rem;
+  height: auto;
+}
+
+.image-index {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-3 {
+  border-radius: 25px;
+}
+
+.border-success {
+  border-color: rgb(0, 51, 102);
+}
+
+.col-flex {
+  display: flex;
+}
+
+.col-lg-8 img {
+  margin-left: -20px;
+}
+
+.center-text {
+  text-align: center ;
+  float: none;
+}
+
+.image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-container-summer {
+  position: relative;
+  overflow: hidden;
+}
+/* getting images in a 16-9 ratio*/
+.ratio16-9 {
+  padding-top: 56.25%;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.text-hover:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* darken the background */
+}
+
+.text-hover:hover .display-5 {
+  font-size: 3.5rem;
+  /* increase the font size */
+}
+
+/* ... existing styles ... */
+
+table {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 9px;
+  text-align: center;
+  color: white;
+
+}
+
+th {
+  font-weight: bold;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+a:link {
+  color: white;
+  /* unvisited links are blue */
+}
+
+a:visited {
+  color: white;
+  /* visited links are purple */
+}
+
+a:hover {
+  color: yellow;
+  /* hovering over links makes them light blue */
+}
+
+figure{
+  display: inline-block; 
+  text-align: center;
+}
+    thead tr:first-child {
+        background-color: black;
+        color: white;
+    }
+
+  label {
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      margin-right: 10px;
+  }
+
+.button {
+  background-color: #c28d9c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+#classic_link{
+    color: blue;
+}
+#classic_link:link {
+  color: white;
+  /* unvisited links are blue */
+}
+
+#classic_link:visited {
+  color: white;
+  /* visited links are purple */
+}
+
+#classic_link:hover {
+  color: yellow;
+  /* hovering over links makes them light blue */
+}
+
+
