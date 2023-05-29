@@ -337,6 +337,9 @@ but i ended up only needing these*/
     background-color: #e9a87d;
 }
 
+.bg-rose{
+  background-color: #c38d9e;
+}
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: #84cccb ;
@@ -538,6 +541,13 @@ figure{
 #classic_link:hover {
   color: yellow;
   /* hovering over links makes them light blue */
+}
+
+.fill_col{
+  overflow: hidden;
+  width: 100%;
+  display: flex; 
+  justify-content: center;
 }
 
 
