@@ -51,7 +51,7 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 ol,
@@ -88,8 +88,8 @@ dl {
 
 .container {
   width: 100%;
-  padding-right: var(1rem);
-  padding-left: var(1rem);
+  padding-right: var(0.5rem);
+  padding-left: var(0.5rem);
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
@@ -549,5 +549,23 @@ figure{
   display: flex; 
   justify-content: center;
 }
+
+#features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-padding{
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      max-width: 90%;
+  }
+}
+
 
 
